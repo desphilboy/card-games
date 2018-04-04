@@ -1,0 +1,111 @@
+
+@coefficient1920: 1;
+@coefficient1700: 0.8;
+@coefficient1500: 0.65;
+@coefficient1300: 0.5;
+@coefficient1100: 0.4;
+@coefficient900: 0.3;
+@coefficient700: 0.2;
+@coefficient500: 0.15;
+@coefficient300: 0.1;
+
+@card_width_medium: 169px;
+@card_hehight_medium: 245px;
+
+@card_width_large: 338px;
+@card_hehight_large: 489px;
+
+.card {
+	display: inline;
+    &:hover {
+        border: green;
+        border-width: 3px 3px 3px 3px;
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .card {
+    	img {
+        width: @card_width_medium * @coefficient1920 ;
+        height: @card_hehight_medium * @coefficient1920;
+    	}
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .card {
+        img {
+        width: @card_width_medium * @coefficient1700 ;
+        height: @card_hehight_medium * @coefficient1700;
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .card {
+        img {
+        width: @card_width_medium * @coefficient1500 ;
+        height: @card_hehight_medium * @coefficient1500;
+        }
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .card {
+        img {
+        width: @card_width_medium * @coefficient1300 ;
+        height: @card_hehight_medium * @coefficient1300;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .card {
+        img {
+        width: @card_width_medium * @coefficient1100 ;
+        height: @card_hehight_medium * @coefficient1100;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .card {
+        img {
+        width: @card_width_medium * @coefficient900 ;
+        height: @card_hehight_medium * @coefficient900;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .card {
+    	img {
+        width: @card_width_medium * @coefficient700;
+        height: @card_hehight_medium * @coefficient700;
+    }
+}
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .card {
+    	img {
+        width: @card_width_medium * @coefficient500;
+        height: @card_hehight_medium * @coefficient500;
+    }
+
+    }
+}
+
+
+@media only screen and (max-width: 300px) {
+
+    .card {
+    	img {
+        width: @card_width_medium * @coefficient300;
+        height: @card_hehight_medium * @coefficient300;
+    }
+    }
+}

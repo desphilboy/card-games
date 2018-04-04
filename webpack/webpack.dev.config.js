@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 module.exports = {
     mode: "development",
@@ -23,8 +24,16 @@ module.exports = {
     devServer: {
         contentBase: __dirname + '/../dist',
         historyApiFallback: true,
-        port: 3000,
+        port: 3010,
 
     },
+    plugins: [
+        new BrowserSyncPlugin({
+            host: 'localhost',
+            port: 3010,
+            server: {
+                baseDir: ['dist']
+            }
+        })
+    ]
 };
-
