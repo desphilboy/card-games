@@ -5,7 +5,7 @@ const baseCardsImageUrl = '/images/1x/';
 const BACK_IMAGE = 'back-green.png';
 const baseRotationDegrees = 1.0;
 
-export default class Card extends Component {
+export class Card extends Component {
 
     constructor(props) {
         super();
