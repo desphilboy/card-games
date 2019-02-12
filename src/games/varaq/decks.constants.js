@@ -1,3 +1,5 @@
+import { STANDARD_NUMBERS, STANDARD_SUITS } from './varaq.constants';
+
 export const STANDARD_DECK = [
     { number: STANDARD_NUMBERS.ACE, suit: STANDARD_SUITS.SPADE },
     { number: STANDARD_NUMBERS.TWO, suit: STANDARD_SUITS.SPADE },

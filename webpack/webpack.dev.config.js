@@ -1,4 +1,3 @@
-var webpack = require('webpack');
 var path = require('path');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
@@ -11,13 +10,7 @@ module.exports = {
         rules: [{
             test: /\.(js|jsx)$/,
             exclude: /node_modules/,
-            use: {
-                loader: 'babel-loader',
-                options: {
-                    presets: ['@babel/preset-env']
-                }
-            }
-
+            loader: 'babel-loader',
         },
         {
             test: /\.(less|css)$/,

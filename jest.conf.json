@@ -1,0 +1,24 @@
+{
+    "collectCoverage": true,
+    "collectCoverageFrom": ["src/**/*.{js,jsx}"],
+    "coverageDirectory": "<rootDir>/reports/jest/coverage",
+    "coveragePathIgnorePatterns": [
+        "/node_modules/"
+    ],
+    "coverageReporters": [
+        "json",
+        "html",
+        "lcov",
+        "text"
+    ],
+    "coverageThreshold": {
+        "global": {
+        "statements": 1,
+        "branches": 1,
+        "functions": 1,
+        "lines": 1
+        }
+    },
+    "rootDir": "./",
+    "verbose": true
+}

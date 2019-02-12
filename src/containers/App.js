@@ -16,10 +16,11 @@ export default class App extends Component {
          {suit:'club', number: 2},
          {},
          {},
-         {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
+         {},{},{suit: 'club', number: 7 },{},{},{},{},{},{},
+         {suit:'spade', number: 1}
         ].forEach((card) => deckCards.insertTop(card));
 
-        return <div><Deck cards={deckCards} x="20" y="20" shiftX="10" shiftY="5" rotated="true"/> </div>;
+        return <div><Deck cards={deckCards} x="90" y="90" shiftX="30" shiftY="10" rotated="true"/> </div>;
 
 
 
