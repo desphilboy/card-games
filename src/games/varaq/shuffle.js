@@ -28,7 +28,7 @@ export function ferr(deck){
     return result;
 }
 
-export function morr(deck){
+export function cut(deck){
     const dividePoint = getRandomInt(deck.length);
     let bunch1 = deepClone(deck.slice(0, dividePoint));
     let bunch2 = deepClone(deck.slice(dividePoint));
@@ -63,11 +63,11 @@ export function borrShuffle(deck, times = 3){
     return result;
 }
 
-export function morrShuffle(deck, times = 3){
+export function cutShuffle(deck, times = 3){
     let result = deck;
     for(let i = 0; i < times; ++i){
-        result = morr(result);
+        result = cut(result);
     }
 
     return result;
-} 
+}
