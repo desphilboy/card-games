@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 import { ferrShuffle, borrShuffle, cut, borr, ferr } from './shuffle.js';
+=======
+import { ferrShuffle, borrShuffle, mixShuffle } from './shuffle.js';
+>>>>>>> save my work
 import { STANDARD_DECK } from './decks.constants.js';
 import { STANDARD_NUMBERS, STANDARD_SUITS } from './varaq.constants';
 
 describe('shuffle', () => {
+<<<<<<< HEAD
     test('cut keeps the lenght and order the same and displaces all cards by same number', () => {
         let r1 = cut(STANDARD_DECK);
         let aceOfSpade = STANDARD_DECK[0];
@@ -27,6 +32,12 @@ describe('shuffle', () => {
         let r1 = borr(STANDARD_DECK);
 
         expect(r1.length).toEqual(STANDARD_DECK.length);
+=======
+    test('dummy test', () => {
+    	
+        console.warn(mixShuffle(STANDARD_DECK));
+        expect(true).toBe(true);
+>>>>>>> save my work
     });
 
     test('Ferr keeps the lenght', () => {

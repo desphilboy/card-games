@@ -71,3 +71,12 @@ export function cutShuffle(deck, times = 3){
 
     return result;
 }
+
+export function mixShuffle(deck, times = 5){
+    let result = deck;
+    for(let i = 0; i < times; ++i){
+        result = borr(ferr(result));
+    }
+
+    return cut(result);
+}
