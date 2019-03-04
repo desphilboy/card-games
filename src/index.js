@@ -63,3 +63,8 @@ function calculateMax(discounts, list) {
     // this functions simply calculates discount for each rule and returns the maximum of all
     const maxMoneyAndProduct = ... 
 }
+
+
+/* as per request I did not spend a long time on this solution, Just gave you the idea, 
+to find out How am I sophisticated in JavaScript look at rest of my repo please
+regars, Iman */ 
